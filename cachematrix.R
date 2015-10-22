@@ -3,12 +3,14 @@
 
 ## Write a short comment describing this function
 
+## makeCacheMatrix: create a list of This 
+
 makeCacheMatrix <- function(x = matrix()) {
 
-        m <- NULL # assign null to name variable of matrix
+        m <- NULL # assign null object to name variable of matrix
         set <- function(y) {
-                x <<- y
-                m <<- NULL
+                x <<- y	# use <<- operator to assign y object to x
+                m <<- NULL # use <<- operator to assign NULL object to m
         }
         get <- function() x
         setinverse <- function(inverse) m <<- inverse
